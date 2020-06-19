@@ -1,4 +1,4 @@
-const regExp = new RegExp(/^(\d+)(s|m|h|d){1}$/, "igu");
+const regExp = new RegExp(/^(\d+)(h|d|w|m|y){1}$/, "igu");
 const dateFormatRegExp = new RegExp(/^(\d){6}$/, "igu");
 
 export const deconstructMailMask = ({
