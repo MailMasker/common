@@ -22,7 +22,7 @@ export const deconstructMailMask = ({
 
   let expiryTokens: string[] = [];
   let mailMaskParts: string[] = [];
-  for (const part of alias.split(".")) {
+  for (const part of alias.split(".").filter((p) => !!p)) {
     if (part.match(regExp)) {
       expiryTokens.push(part);
     } else if (part.match(dateFormatRegExp)) {
